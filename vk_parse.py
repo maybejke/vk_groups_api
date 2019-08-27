@@ -7,9 +7,22 @@ def parse_vk_group():
     SERVICE_TOKEN = 'ffb24391ffb24391ffb243911fffda3a77fffb2ffb24391a3eac4ce635b403c6ba08f00'
     group_id = '76592277'
     api = vk_requests.create_api(service_token=SERVICE_TOKEN)
-    group = api.groups.getMembers(group_id=group_id, fields=['sex', 'bdate', 'city', 'country', 'photo_max_orig',
-                                                                'online', 'online_mobile', 'contacts', 'connections',
-                                                                'site', 'education', 'universities', 'schools'])
+    group = api.groups.getMembers(
+        group_id=group_id,
+        fields=[
+            'sex',
+            'bdate',
+            'city',
+            'country',
+            'photo_max_orig',
+            'online',
+            'online_mobile',
+            'contacts',
+            'connections',
+            'site',
+            'education',
+            'universities',
+            'schools'])
     return group
 
 
