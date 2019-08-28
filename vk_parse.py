@@ -35,7 +35,7 @@ def file_writer(group):
     except:
         print("Could not connect to MongoDB")
 
-    db = conn.auodhfuafhlq
+    db = conn.vkdata
     collection = db.data
 
     result = collection.insert_one(group)
